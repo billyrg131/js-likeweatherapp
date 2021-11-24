@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.input{
+    text-align: center;
+    margin: 100px 40px 0 40px;
+}
+input[type="text"]{
+    color: red;
+    height: 50px;
+    width: 500px;
+    background: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 4px dashed gray;
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+input[type="submit"]{
+    height: 50px;
+    width: 100px;
+    background: lightseagreen;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 4px dashed gray;
+    border-radius: 15px;
+}
+.clear{
+    height: 50px;
+    width: 100px;
+    background: lightseagreen;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 4px dashed gray;
+    border-radius: 15px;
+}
+::placeholder{
+    color: dimgrey;
+}
+.display{
+    text-align: center;
+    color: blue;
+    background-image: url('images/HKTCBstripes.jpeg');
+    background-size: cover;
+}
+.cityName, .humid, .desc, .temp, .pressure, .speed, .clouds, .feelslike, .tempMax, .tempMin{
+    font-size: 23px;
+}

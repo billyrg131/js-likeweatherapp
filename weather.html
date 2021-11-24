@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Weather App</title>
+    <style>
+        body{
+            background-image: url('weather-pic.jpeg');
+            background-size: cover;
+        }
+
+        input[type = "button"]{
+            background-color: orange;
+            color: dimgray;
+            border: 2px solid black;
+            width: 100%;
+            font-size: 45px;
+        }
+        input[type = "text"]{
+            background-color: white;
+            border: 2px solid black;
+            width: 100%;
+            font-size: 30px;
+        }
+        #map{
+            height: 500px;
+            width: 100%;
+        }
+        .lgOutBtn{
+            border-radius: 30px;
+            border: 2px solid green;
+            background: blue;
+            display: flex;
+            justify-content: flex-end;
+            padding:8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-blue bg-warning">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">LikeWeather</span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Weather Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="news.html">Weather News</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="forecast.html">Weather Forecast</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <button class="lgOutBtn"><a href="auth.html">Logout </a></button>
+  </div>
+</nav>
+    <div class="input">
+        <input type="text" class="inputValue" placeholder="Enter a city">
+        <br>
+        <br>
+        <input type="submit" class="button" value="Submit">
+        <button type="button" class="clear" onclick="clearFn();">Clear</button>
+    </div>
+    <div class="display">
+        <h1 class="cityName"></h1>
+        <p class="desc"></p>
+        <p class="temp"></p>
+        <p class="tempMax"></p>
+        <p class="tempMin"></p>
+        <p class="feelslike"></p>
+        <p class="humid"></p>
+        <p class="pressure"></p>
+        <p class="speed"></p>
+        <p class="clouds"></p>
+    </div>
+    <script type="text/javascript" src="weather.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>
